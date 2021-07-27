@@ -21,9 +21,9 @@ add.addEventListener("click", async () => {
             let newFigure = document.createElement("figure")
             let newImage = document.createElement("img")
             let newFigCaption = document.createElement("figcaption")
-
-            newImage.src = url
             newFigCaption.innerText = breed
+            newImage.src = url
+
 
             newFigure.append(newImage,newFigCaption)
             newli.append(newFigure)

@@ -1,0 +1,18 @@
+h1{
+    color:red;
+    padding:5px
+}
+
+ul{
+    border:2px solid black;
+    padding:5px
+}
+
+li:hover{
+    background-color: blue;
+    padding:5px;
+}
+
+div.timer {
+    color:white;
+}
