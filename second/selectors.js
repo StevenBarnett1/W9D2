@@ -34,10 +34,10 @@ const select = () => {
     // Your code here
 
     let companies = document.querySelectorAll("section#three p:first-of-type > a:not([class])")
-    let result = []
-    for(let company of companies){
-        result.push(company.innerText)
-    }
+    // let result = []
+    // for(let company of companies){
+    //     result.push(company.innerText)
+    // }
 
 
     // 9. Get "Amazon" list element
@@ -46,9 +46,13 @@ const select = () => {
 
 
     // 10. Get all unicorn list elements (not the image element)
-
+    let result = []
     let unicorns = document.querySelectorAll("section#three >ul > li")
-    console.log(unicorns)
+    for(let unicorn of unicorns){
+        if (unicorn.querySelector("img.unicorn"))
+        result.push(unicorn)
+    }
+    console.log(result)
 }
 
 window.onload = select;
